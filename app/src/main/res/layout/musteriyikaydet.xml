@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="80dp">
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="Müşteri Numarası"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/numara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Müşteri Adı"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+                <EditText
+                    android:id="@+id/ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Müşteri Soyadı"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+                <EditText
+                    android:id="@+id/soyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="Adres"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/adres"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="Konum"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/konum"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/konumcopy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Konumu Kopyala" />
+
+                <Button
+                    android:id="@+id/kaydet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Kaydet"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" >
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

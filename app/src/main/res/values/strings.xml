@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">taksi</string>
+    <string name="navigation_drawer_open">Menü Aç</string>
+    <string name="navigation_drawer_close">Menü Kapat</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="yeni_of_r_ekle">Yeni Şoför Ekle</string>
+    <string name="yeni_arac_ekle">Yeni Araç Ekle</string>
+</resources>

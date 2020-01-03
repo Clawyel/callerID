@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/aramalar"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Aramalar" />
+        <item
+            android:id="@+id/aracGonderimleri"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Araç Gönderimleri" />
+        <item
+            android:id="@+id/musteriler"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Müşteriler" />
+
+        <item
+            android:id="@+id/soforler"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Şoförler" />
+        <item
+            android:id="@+id/araclar"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Araçlar" />
+
+    </group>
+
+
+
+</menu>
